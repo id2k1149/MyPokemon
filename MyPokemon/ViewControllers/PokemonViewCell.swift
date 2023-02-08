@@ -10,6 +10,5 @@ import UIKit
 class PokemonViewCell: UITableViewCell {
     
     @IBOutlet var pokemonImageView: UIImageView!
-    
     @IBOutlet weak var nameLabel: UILabel!
 }
