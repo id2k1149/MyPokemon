@@ -43,17 +43,10 @@ class NetworkManager {
                 DispatchQueue.main.async {
                     completion(pokemonAPI.results)
                 }
-                
             } catch {
                 print(error)
             }
-            
-            
         }.resume()
-        
-        
     }
-    
-    
 }
 

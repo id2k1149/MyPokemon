@@ -33,14 +33,17 @@ extension PokemonListViewController {
     
     override func tableView(_ tableView: UITableView,
                             numberOfRowsInSection section: Int) -> Int {
-        0
+        // 9. number of rows 
+        pokemons.count
     }
 
     
     override func tableView(_ tableView: UITableView,
                             cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "pokemonCell",
-                                                 for: indexPath)
+        // 10. guard cell
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: "pokemonCell",
+                                                       for: indexPath)
+                as? PokemonViewCell else { return UITableViewCell() }
 
         
 
